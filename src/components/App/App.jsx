@@ -35,7 +35,9 @@ export class App extends Component {
 
     if (this.countPositiveFeedbackPercentage()) {
       positiveFeedbackPercentage = this.countPositiveFeedbackPercentage();
-    }                
+    } 
+    
+    console.log('Test')
 
     return (
     <Container>        
