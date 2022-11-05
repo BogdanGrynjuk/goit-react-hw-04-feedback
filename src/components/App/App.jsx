@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import { useState } from "react";
 import { Section } from "components/Section/Section";
 import { FeedbackOptions } from "components/FeedbackOptions/FeedbackOptions";
@@ -13,8 +12,7 @@ export const App = () => {
   const [counterNeutral, setCounterNeutral] = useState(0);
   const [counterBad, setCounterBad] = useState(0);
 
-  const leaveFeedback = (typeCounter) => {
-    
+  const leaveFeedback = (typeCounter) => {    
     switch (typeCounter) {
       case "good":
         setCounterGood(prevState => prevState + 1);
